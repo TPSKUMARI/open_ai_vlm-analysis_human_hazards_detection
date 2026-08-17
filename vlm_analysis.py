@@ -139,76 +139,7 @@ class EnhancedVLMAnalysisSystem:
         try:
             # Enhanced prompt for comprehensive safety analysis
             prompt = """
-            You are an advanced AI safety monitor for elderly care. Analyze this image for comprehensive safety assessment.
-
-            CRITICAL ANALYSIS AREAS:
-
-            1. HUMAN ACTIVITY:
-            - Describe current activity in detail (sitting, standing, walking, cooking, cleaning, etc.)
-            - Assess if the activity is being performed safely
-            - Note posture and body positioning
-
-            2. PRE-FALL RISK ASSESSMENT:
-            - Look for signs that indicate potential falling risk:
-              * Unsteady posture or balance issues
-              * Reaching for objects while off-balance
-              * Standing on unstable surfaces (chairs, stools)
-              * Poor lighting conditions
-              * Rushing or moving too quickly
-              * Signs of dizziness or disorientation
-              * Leaning too far forward or backward
-              * One foot raised or unstable stance
-            
-            3. ENVIRONMENTAL HAZARDS:
-            - Spilled liquids on floor (water, drinks, cleaning products)
-            - Scattered objects or obstacles in walkways
-            - Loose rugs or mats
-            - Poor lighting or shadows
-            - Sharp objects within reach
-            - Stairs without proper railings
-            - Wet surfaces (bathrooms, kitchens)
-            - Electrical hazards (exposed wires, overloaded outlets)
-            - Fire/smoke/gas hazards
-            - Open windows or doors creating safety risks
-            - Cluttered pathways
-
-            4. SAFETY EQUIPMENT ASSESSMENT:
-            - Is person wearing appropriate safety gear if needed?
-            - Are mobility aids (walker, cane) being used properly?
-            - Safety railings or grab bars available and being used?
-
-            5. HEALTH & BEHAVIORAL INDICATORS:
-            - Signs of confusion or disorientation?
-            - Physical distress indicators?
-            - Unusual or risky behavior patterns?
-
-            Calculate SAFETY SCORE (0-100):
-            - 90-100: Very safe environment and behavior
-            - 70-89: Generally safe with minor concerns
-            - 50-69: Moderate safety concerns requiring attention
-            - 30-49: Significant safety risks present
-            - 0-29: Critical safety situation requiring immediate intervention
-
-            Determine URGENCY LEVEL:
-            - "low": Normal activities, safe environment
-            - "medium": Minor hazards or slightly risky behavior
-            - "high": Significant risks that need prompt attention
-            - "critical": Immediate danger requiring emergency response
-
-            Respond in this exact JSON format:
-            {
-                "human_activity": "detailed description of current activity and how it's being performed",
-                "hazard_detected": true/false,
-                "hazard_description": "specific description of immediate hazards or 'No immediate hazards detected'",
-                "pre_fall_risk": true/false,
-                "pre_fall_description": "detailed assessment of fall risks or 'No pre-fall risks detected'",
-                "environmental_hazards": ["list", "of", "environmental", "concerns"],
-                "safety_score": 85,
-                "urgency_level": "low/medium/high/critical",
-                "emotional_state": "calm/anxious/confused/distressed/content",
-                "confidence": 0.9,
-                "additional_notes": "any other relevant safety observations",
-                "safety_recommendations": ["specific", "safety", "suggestions"]
+  Prompt
             }
             """
             
